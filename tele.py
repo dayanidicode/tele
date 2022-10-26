@@ -19,7 +19,7 @@ def test1(update:Update,context:CallbackContext):
     path = {"photo":open(file,"rb")}
     resp = r.post(f"https://api.telegram.org/bot5584328065:AAHIM8QNc8cU_0ktfj8li9V6TfPXc6xeEt8/sendPhoto?chat_id=-895245832&caption=",files=path)
 
-def Doc(update:Update,context:CallbackContext):
+def xls(update:Update,context:CallbackContext):
     file = "Attendance.csv"
     path = {"document":open(file,"rb")}
     resp = r.post(f"https://api.telegram.org/bot5584328065:AAHIM8QNc8cU_0ktfj8li9V6TfPXc6xeEt8/sendDocument?chat_id=-895245832&caption=",files=path)
@@ -40,7 +40,7 @@ dispatcher.add_handler(startvalue)
 startvalue1=CommandHandler("photo",test1)
 dispatcher.add_handler(startvalue1)
 
-startvalu=CommandHandler("doc",Doc)
+startvalu=CommandHandler("doc",xls)
 dispatcher.add_handler(startvalu)
 print("Connected")
 
