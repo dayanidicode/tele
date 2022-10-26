@@ -15,6 +15,11 @@ def testfunction(update:Update,context:CallbackContext):
 
 
 def test1(update:Update,context:CallbackContext):
+    bot.send_message(
+        chat_id=update.effective_chat.id,
+        text=r"Wel Come"
+    )
+
     file = "file.jpg"
     path = {"photo":open(file,"rb")}
     resp = r.post(f"https://api.telegram.org/bot5584328065:AAHIM8QNc8cU_0ktfj8li9V6TfPXc6xeEt8/sendPhoto?chat_id=-895245832&caption=",files=path)
