@@ -20,7 +20,7 @@ def test1(update:Update,context:CallbackContext):
     resp = r.post(f"https://api.telegram.org/bot5584328065:AAHIM8QNc8cU_0ktfj8li9V6TfPXc6xeEt8/sendPhoto?chat_id=-895245832&caption=",files=path)
 
 def xls(update:Update,context:CallbackContext):
-    file = "Attendance.csv"
+    file = "file.jpg"
     path = {"document":open(file,"rb")}
     resp = r.post(f"https://api.telegram.org/bot5584328065:AAHIM8QNc8cU_0ktfj8li9V6TfPXc6xeEt8/sendDocument?chat_id=-895245832&caption=",files=path)
 
