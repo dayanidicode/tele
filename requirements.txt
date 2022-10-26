@@ -1,3 +1,6 @@
 telegram==0.0.1
 python-telegram-bot==13.14
 requests==2.25.1
+opencv-python==4.6.0.66
+numpy==1.23.4
+urllib3==1.26.12
